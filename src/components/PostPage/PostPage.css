@@ -1,0 +1,44 @@
+.post-div{
+    margin-bottom: 15px;
+    margin-left: 10px;
+    height: 500px;
+    width: 500px;
+    background-color: #363535;
+    border-radius: 13px;
+}
+
+.image{
+    width: 60%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.image-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.description{
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.author{
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.title{
+    font-size: 40px;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}

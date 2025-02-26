@@ -1,0 +1,32 @@
+.Footer{
+    background-color: #5F5F5F;
+    color: white;
+    width: 100vw;
+    height: 173px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 17px;
+    bottom: 0;
+    padding: 37px;
+}
+.textdiv{
+    width: max-content;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
