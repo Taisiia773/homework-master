@@ -31,6 +31,7 @@ export function PostsList() {
         <option className="optin-all" value="all">
           Все категории
         </option>
+        {/* категории нужно брать с API */}
         <option value="skibidi">Скибиды</option>
         <option value="rizz">Ризз</option>
         <option value="biba">Биба</option>

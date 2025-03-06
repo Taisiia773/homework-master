@@ -9,10 +9,11 @@ import {
   Route
 } from "react-router-dom"
 import { createContext, useState } from "react";
+// Импорт не используется, нужно убрать
 import { title } from "process";
 import { Login } from "./Login/Login";
 import { Registration } from "./Registration/Registration";
-
+// cart? и что с табуляциями случилось
 interface ICartContext{
 	cartItems : IPost[],
 	addItem: (item: IPost) => void,

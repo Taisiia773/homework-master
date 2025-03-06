@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { cartContext } from "../App";
 export function LikedPages() {
+    // тоже нужно использовать кастомный хук useLikedPostsContext
 	const { cartItems } = useContext(cartContext);
 	return (
 		<div>

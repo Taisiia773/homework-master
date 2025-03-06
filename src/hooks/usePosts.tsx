@@ -8,6 +8,7 @@ export interface IPost{
   description: string;
   author: string;
   image: string;
+    // Использовать интерфейс IComment
   Comment: {
       id: number;
       title: string;

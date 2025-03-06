@@ -15,6 +15,8 @@ export function Post(props: IPostProps){
     const [likes, setLikes] = useState(999)
     const [isLiked, setIsLiked] = useState(false)
     const [isDisliked, setIsDisliked] = useState(false)
+    // а контекст где?
+    // при лайке поста он должен добавится в контекст лайкнутых постов
     function addLike(){
         setLikes(likes + 1)
         setIsLiked(true)
