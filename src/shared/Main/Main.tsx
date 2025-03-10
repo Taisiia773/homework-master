@@ -1,6 +1,4 @@
 import './Main.css'
-import { PostsList } from "../PostsList/PostsList";
-// import { ProductsList } from '../ProductsList/ProductsList'
 import { ReactNode } from 'react'
 
 interface IMainProps{

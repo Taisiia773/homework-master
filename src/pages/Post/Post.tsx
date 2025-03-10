@@ -1,6 +1,7 @@
 import { useState } from "react"
 import {Link} from "react-router-dom"
 import "./Post.css"
+import { useLikedPostsContext } from "../../context/CartContext"
 
 
 interface IPostProps{
@@ -12,20 +13,23 @@ interface IPostProps{
 }
 
 export function Post(props: IPostProps){
-    const [likes, setLikes] = useState(999)
-    const [isLiked, setIsLiked] = useState(false)
-    const [isDisliked, setIsDisliked] = useState(false)
+    const [likes, setLikes] = useState(777)
     // а контекст где?
-    // при лайке поста он должен добавится в контекст лайкнутых постов
+    // при лайке поста он должен добавится в контекст лайкнутых постов+
+
+    const {addItem, isLiked, removeItem} = useLikedPostsContext()
+    
+    
+    
     function addLike(){
         setLikes(likes + 1)
-        setIsLiked(true)
-        setIsDisliked(false)
+        isLiked(props.id)
+        removeItem(props.id)
     }
     function removeLike(){
         setLikes(likes - 1)
-        setIsDisliked(true)
-        setIsLiked(false)
+        isLiked(props.id)
+        removeItem(props.id)
     }
 
     return(
@@ -47,10 +51,10 @@ export function Post(props: IPostProps){
                     </span>
                 </div>
             </Link>
-                <button className="button1" onClick={removeLike} disabled={isDisliked}>
+                <button className="button1" onClick={removeLike}>
                     -
                 </button>
-                <button className="button2" onClick={addLike} disabled={isLiked}>
+                <button className="button2" onClick={addLike}>
                     +
                 </button>
         </div>

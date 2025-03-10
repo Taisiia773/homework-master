@@ -14,9 +14,9 @@ export function usePostById(id: number | undefined) {
         }
 
         async function fetchPost() {
-            setLoading(true);
             try {
-                // setloading лучше делать в try
+                // setloading лучше делать в try +
+                setLoading(true);
                 const response = await fetch(`http://localhost:7000/api/post/${id}`);
                 const result = await response.json();
 

@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
 
 export interface IPost{
-  id: number;
-  title: string;
-  price: number;
-  category: string;
-  description: string;
-  author: string;
-  image: string;
-    // Использовать интерфейс IComment
-  Comment: {
-      id: number;
-      title: string;
-      content: string;
-  }
+    id: number;
+    title: string;
+    price: number;
+    category: string;
+    description: string;
+    author: string;
+    image: string;
+    // Использовать интерфейс IComment +
+    IComment: {
+        id: number;
+        title: string;
+        content: string;
+    }
 }
 
 export function usePosts() {
